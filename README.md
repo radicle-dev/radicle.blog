@@ -1,4 +1,4 @@
-# The [radicle.blog](https://radicle.blog) blog.
+# The [radicle.blog](https://radicle.blog)
 
 ## Build
 
