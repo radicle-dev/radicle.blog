@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title key="title">Radicle - Downloads</title>
+  {{> headMeta }}
+  <meta property="og:title" content="Radicle - Downloads" />
+  <meta property="og:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="twitter:image" content="https://radicle.xyz/img/social-share.jpg" />
+  <meta property="og:description" content="Radicle is a peer-to-peer stack for building software together." />
+  <meta property="description" content="Radicle is a peer-to-peer stack for building software together." />
+</head>
+<body id="download">
+  {{> header }}
+  <div class="content">
+    <video class="headline-gif gif" autoplay playsinline loop muted title="Animation of a flower growing.">
+      <source type="video/mp4" src="/img/download-flower.mp4">
+    </video>
+    <h1 class="headline druk">Try the beta</h1>
+    <div id="text">
+      <h1>Upstream <span>Beta</span></h1>
+      <h2>A desktop client for Radicle.</h2>
+      <p>Check out our <a href="https://docs.radicle.xyz/docs/getting-started" target="_blank"><span>Guide to Getting Started</span></a>.</p>
+      <a href="https://releases.radicle.xyz/radicle-upstream-0.1.10.dmg">
+        <button>{{> svg-mac }} Download for macOS</button>
+      </a>
+      <a href="https://releases.radicle.xyz/radicle-upstream-0.1.10.AppImage">
+        <button>{{> svg-linux }} Download for Linux</button>
+      </a>
+      <form
+        action="mailto:?subject=Download the Radicle app&body=When you get back to your computer download the app here: www.radicle.xyz/downloads.html"
+        method="POST"
+        enctype="text/plain"
+      >
+        <button id="email-me">{{> svg-email }} Email me a link</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
